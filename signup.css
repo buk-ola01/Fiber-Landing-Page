@@ -1,0 +1,140 @@
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: "Inter", sans-serif;
+}
+a {
+     color: #4d13d1;
+     font-weight: bold;
+}
+body {
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #000;
+}
+.container {
+     display: flex;
+     align-items: stretch;
+     justify-content: center;
+     width: 90%;
+     margin: 20px auto;
+}
+.sign-up-left {
+     background-color: #fff;
+     padding: 40px 100px;
+     flex-basis: 50%;
+     flex-grow: 1;
+     background-color: #fff;
+}
+
+.sign-up-left h2 {
+     margin: 24px 0;
+     font-size: 26px;
+}
+
+.sign-up-right {
+     padding: 70px 40px;
+     flex-basis: 50%;
+     flex-grow: 1;
+     background: #4d13d1;
+}
+.sign-up-right img {
+     width: 80%;
+     margin: auto;
+     display: block;
+}
+.input-box {
+     width: 100%;
+     padding: 15px;
+     margin: 15px 0px;
+     outline: none;
+     font-size: 14px;
+     border: 1px solid #e7e7e7;
+     border-radius: 5px;
+}
+input[type="checkbox"] {
+     margin-top: 30px;
+}
+.sign-up-left label {
+     font-size: 15px;
+     font-weight: bold;
+}
+label[for="terms"] {
+     font-weight: normal;
+}
+.sign-up-left button {
+     width: 100%;
+     background: #4d13d1;
+     padding: 10px;
+     border: 0;
+     outline: none;
+     font-size: 16px;
+     margin-top: 10px;
+     cursor: pointer;
+     color: #fff;
+     font-weight: bold;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all 0.7s;
+}
+.sign-up-left button:hover {
+     background-color: black;
+     font-weight: 500;
+}
+.sign-up-left button span {
+     display: inline-block;
+     overflow: hidden;
+     width: 0px;
+}
+.sign-up-left button:hover span {
+     width: 30px;
+}
+.sign-in {
+     font-size: 15px;
+     margin-top: 10px;
+     text-align: center;
+}
+.sign-up-right h2 {
+     text-align: center;
+     font-size: 30px;
+     color: #fff;
+     margin-top: 20px;
+}
+.sign-up-right p {
+     font-size: 15px;
+     color: #fff;
+     padding-top: 15px 15px 10px 15px;
+     text-align: center;
+     line-height: 22px;
+}
+.dots {
+     text-align: center;
+}
+.dots > .dot {
+     width: 7px;
+     height: 7px;
+     border-radius: 50%;
+     border: 0;
+     background-color: rgb(149, 149, 149);
+     display: inline-block;
+}
+@media screen and (max-width: 786px) {
+     .container {
+          flex-direction: column;
+     }
+     .sign-up-left {
+          padding: 30px;
+     }
+}
+@media screen and (max-width: 1000px) {
+     .sign-up-left {
+          padding: 40px;
+     }
+     .sign-up-right {
+          padding: 70px 20px;
+     }
+}
